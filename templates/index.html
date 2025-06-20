@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Benvenuto nella Quiz App!</h1>
+<form method="POST">
+    <label for="city">Inserisci il nome della città:</label>
+    <input type="text" name="city" id="city">
+    <button type="submit">Cerca</button>
+</form>
+{% if weather %}
+    <h2>Previsioni meteo</h2>
+    <table>
+        <tr><th>Giorno</th><th>Data</th><th>Temperatura (giorno)</th><th>Descrizione</th></tr>
+        {% for item in weather %}
+        <tr>
+            <td>{{ item.day }}</td>
+            <td>{{ item.date }}</td>
+            <td>{{ item.temp_day }}°C</td>
+            <td>{{ item.description }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+{% endblock %}

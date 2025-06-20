@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Quiz{% endblock %}
+{% block content %}
+<h2>Quiz AI</h2>
+<p>Punteggio attuale: {{ score }}</p>
+<form method="POST">
+    <p>{{ question.text }}</p>
+    {% for opt in options %}
+        <input type="radio" name="option" value="{{ opt }}" required> {{ opt }}<br>
+    {% endfor %}
+    <input type="hidden" name="question_id" value="{{ question.id }}">
+    <button type="submit">Invia</button>
+</form>
+{% endblock %}

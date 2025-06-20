@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Quiz App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('index') }}" class="{% if request.endpoint == 'index' %}active{% endif %}">Home</a>
+            {% if 'user_id' not in session %}
+                <a href="{{ url_for('register') }}" class="{% if request.endpoint == 'register' %}active{% endif %}">Registrazione</a>
+                <a href="{{ url_for('login') }}" class="{% if request.endpoint == 'login' %}active{% endif %}">Login</a>
+            {% else %}
+                <a href="{{ url_for('quiz') }}" class="{% if request.endpoint == 'quiz' %}active{% endif %}">Quiz</a>
+                <a href="{{ url_for('logout') }}" class="{% if request.endpoint == 'logout' %}active{% endif %}">Logout</a>
+            {% endif %}
+            <a href="{{ url_for('leaderboard') }}" class="{% if request.endpoint == 'leaderboard' %}active{% endif %}">Classifica</a>
+        </nav>
+    </header>
+
+    <main>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Sviluppato da Niccolò Pellizzari</p>
+    </footer>
+</body>
+</html>
