@@ -40,7 +40,10 @@ def get_weather_forecast(city):
             check_midnight_hour = 2
         local_tz = timezone(timedelta(seconds=utc_secoffset))
         # Il modo in cui ho fatto l'algoritmo suppone che i 
-        # dati arrivino sempre in ordine
+        # dati arrivino sempre in ordine e che il delta rispetto al fuso orario 
+        # di londra sia multiplo dell'ora 
+        # per citta come Mumbai che hanno fusi orari multipli di 30 minuti non funziona
+        # TODO: sicuramente migliorabile
         for item in data['list']:
             date_txt = item['dt_txt']
             utc_date = datetime.strptime(date_txt, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
