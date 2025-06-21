@@ -90,6 +90,13 @@ def leaderboard():
     users = User.query.order_by(User.score.desc()).limit(10).all()
     return render_template('leaderboard.html', users=users)
 
+@app.context_processor
+def inject_user():
+    if 'user_id' in session:
+        user = User.query.get(session['user_id'])
+        return {'current_user': user}
+    return {}
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()

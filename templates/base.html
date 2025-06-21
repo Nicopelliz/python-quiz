@@ -19,7 +19,9 @@
             <a href="{{ url_for('leaderboard') }}" class="{% if request.endpoint == 'leaderboard' %}active{% endif %}">Classifica</a>
         </nav>
     </header>
-
+    {% if current_user %}
+        <div class="user-greeting">Ciao, {{ current_user.name }}</div>
+    {% endif %}
     <main>
         {% with messages = get_flashed_messages() %}
             {% if messages %}
