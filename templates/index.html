@@ -10,13 +10,18 @@
 {% if weather %}
     <h2>Previsioni meteo</h2>
     <table>
-        <tr><th>Giorno</th><th>Data</th><th>Temperatura (giorno)</th><th>Descrizione</th></tr>
+        <tr>
+            <th>Giorno</th>
+            <th>Data</th>
+            <th>Temperatura (giorno)</th>
+            <th>Temperatura (notte)</th>
+        </tr>
         {% for item in weather %}
         <tr>
             <td>{{ item.day }}</td>
             <td>{{ item.date }}</td>
             <td>{{ item.temp_day }}°C</td>
-            <td>{{ item.description }}</td>
+            <td>{{ item.temp_night }}°C</td>
         </tr>
         {% endfor %}
     </table>
