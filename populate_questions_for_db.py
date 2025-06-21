@@ -10,7 +10,7 @@ app.config.from_object(Config)
 db.init_app(app)
 
 # Percorso del file JSON (nella stessa cartella)
-FILENAME = 'instance/nlp_quiz_questions.json'
+FILENAME = 'nlp_quiz_questions.json'
 
 
 def load_questions_from_file():

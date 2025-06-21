@@ -1,0 +1,317 @@
+[
+    {
+        "question": "What does NLP stand for in the context of computer science?",
+        "correct": "Natural Language Processing",
+        "wrong": [
+            "Neuro-Linguistic Programming",
+            "Network Logic Processing",
+            "Node Learning Protocol"
+        ]
+    },
+    {
+        "question": "Which library is commonly used for NLP tasks in Python?",
+        "correct": "spaCy",
+        "wrong": [
+            "Pandas",
+            "NumPy",
+            "Matplotlib"
+        ]
+    },
+    {
+        "question": "What is the process of removing common words like 'and', 'the', 'is' called?",
+        "correct": "Stop word removal",
+        "wrong": [
+            "Stemming",
+            "Tokenization",
+            "Lemmatization"
+        ]
+    },
+    {
+        "question": "Which technique converts words into numerical vectors?",
+        "correct": "Word Embedding",
+        "wrong": [
+            "Parsing",
+            "Tokenizing",
+            "Filtering"
+        ]
+    },
+    {
+        "question": "Which model architecture is most commonly used in modern NLP (e.g., BERT, GPT)?",
+        "correct": "Transformer",
+        "wrong": [
+            "RNN",
+            "CNN",
+            "SVM"
+        ]
+    },
+    {
+        "question": "What does 'tokenization' mean in NLP?",
+        "correct": "Splitting text into words or subwords",
+        "wrong": [
+            "Translating text to code",
+            "Removing punctuation",
+            "Counting characters"
+        ]
+    },
+    {
+        "question": "Which of the following is a pre-trained NLP model?",
+        "correct": "BERT",
+        "wrong": [
+            "VGG16",
+            "AlexNet",
+            "LeNet"
+        ]
+    },
+    {
+        "question": "What is 'stemming' used for?",
+        "correct": "Reducing words to their root form",
+        "wrong": [
+            "Counting sentence length",
+            "Removing punctuation",
+            "Identifying parts of speech"
+        ]
+    },
+    {
+        "question": "What does POS tagging stand for?",
+        "correct": "Part-of-Speech tagging",
+        "wrong": [
+            "Point of Syntax",
+            "Parsing of Statements",
+            "Programming Oriented Syntax"
+        ]
+    },
+    {
+        "question": "Which term describes the frequency of a term in a document relative to its frequency in a corpus?",
+        "correct": "TF-IDF",
+        "wrong": [
+            "Bag-of-Words",
+            "Token Count",
+            "Word2Vec"
+        ]
+    },
+    {
+        "question": "Which Python library is known for its use in deep learning NLP models?",
+        "correct": "Transformers (by Hugging Face)",
+        "wrong": [
+            "scikit-learn",
+            "OpenCV",
+            "Flask"
+        ]
+    },
+    {
+        "question": "What is the main goal of Named Entity Recognition (NER)?",
+        "correct": "Identify proper nouns like names, places, and organizations",
+        "wrong": [
+            "Detect grammar errors",
+            "Translate text",
+            "Remove stopwords"
+        ]
+    },
+    {
+        "question": "Which format is commonly used for annotated NLP datasets?",
+        "correct": "CoNLL",
+        "wrong": [
+            "JPEG",
+            "CSV",
+            "MP3"
+        ]
+    },
+    {
+        "question": "What does the BLEU score measure in NLP?",
+        "correct": "Quality of machine translation",
+        "wrong": [
+            "Spelling accuracy",
+            "Speech recognition",
+            "Part-of-speech tagging"
+        ]
+    },
+    {
+        "question": "What is the main challenge of coreference resolution?",
+        "correct": "Finding which words refer to the same entity",
+        "wrong": [
+            "Counting word frequencies",
+            "Detecting language",
+            "Translating to other languages"
+        ]
+    },
+    {
+        "question": "Which one is a word embedding model?",
+        "correct": "Word2Vec",
+        "wrong": [
+            "Naive Bayes",
+            "Bag-of-Words",
+            "TF-IDF"
+        ]
+    },
+    {
+        "question": "Which NLP task involves classifying text into categories?",
+        "correct": "Text classification",
+        "wrong": [
+            "POS tagging",
+            "Stemming",
+            "Named Entity Recognition"
+        ]
+    },
+    {
+        "question": "Which model architecture is GPT based on?",
+        "correct": "Transformer decoder",
+        "wrong": [
+            "Transformer encoder",
+            "Recurrent Neural Network",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "question": "Which is an unsupervised NLP task?",
+        "correct": "Topic modeling",
+        "wrong": [
+            "Sentiment analysis",
+            "NER",
+            "POS tagging"
+        ]
+    },
+    {
+        "question": "Which NLP method reduces words to their dictionary base form?",
+        "correct": "Lemmatization",
+        "wrong": [
+            "Stemming",
+            "Parsing",
+            "Chunking"
+        ]
+    },
+    {
+        "question": "Which NLP method reduces words to their dictionary base form?",
+        "correct": "Lemmatization",
+        "wrong": [
+            "Stemming",
+            "Parsing",
+            "Chunking"
+        ]
+    },
+    {
+        "question": "What is the main challenge of coreference resolution?",
+        "correct": "Finding which words refer to the same entity",
+        "wrong": [
+            "Counting word frequencies",
+            "Detecting language",
+            "Translating to other languages"
+        ]
+    },
+    {
+        "question": "Which NLP task involves classifying text into categories?",
+        "correct": "Text classification",
+        "wrong": [
+            "POS tagging",
+            "Stemming",
+            "Named Entity Recognition"
+        ]
+    },
+    {
+        "question": "What does the BLEU score measure in NLP?",
+        "correct": "Quality of machine translation",
+        "wrong": [
+            "Spelling accuracy",
+            "Speech recognition",
+            "Part-of-speech tagging"
+        ]
+    },
+    {
+        "question": "What does the BLEU score measure in NLP?",
+        "correct": "Quality of machine translation",
+        "wrong": [
+            "Spelling accuracy",
+            "Speech recognition",
+            "Part-of-speech tagging"
+        ]
+    },
+    {
+        "question": "Which NLP task involves classifying text into categories?",
+        "correct": "Text classification",
+        "wrong": [
+            "POS tagging",
+            "Stemming",
+            "Named Entity Recognition"
+        ]
+    },
+    {
+        "question": "Which format is commonly used for annotated NLP datasets?",
+        "correct": "CoNLL",
+        "wrong": [
+            "JPEG",
+            "CSV",
+            "MP3"
+        ]
+    },
+    {
+        "question": "Which is an unsupervised NLP task?",
+        "correct": "Topic modeling",
+        "wrong": [
+            "Sentiment analysis",
+            "NER",
+            "POS tagging"
+        ]
+    },
+    {
+        "question": "Which Python library is known for its use in deep learning NLP models?",
+        "correct": "Transformers (by Hugging Face)",
+        "wrong": [
+            "scikit-learn",
+            "OpenCV",
+            "Flask"
+        ]
+    },
+    {
+        "question": "What is the main challenge of coreference resolution?",
+        "correct": "Finding which words refer to the same entity",
+        "wrong": [
+            "Counting word frequencies",
+            "Detecting language",
+            "Translating to other languages"
+        ]
+    },
+    {
+        "question": "Which NLP method reduces words to their dictionary base form?",
+        "correct": "Lemmatization",
+        "wrong": [
+            "Stemming",
+            "Parsing",
+            "Chunking"
+        ]
+    },
+    {
+        "question": "Which format is commonly used for annotated NLP datasets?",
+        "correct": "CoNLL",
+        "wrong": [
+            "JPEG",
+            "CSV",
+            "MP3"
+        ]
+    },
+    {
+        "question": "What is the main goal of Named Entity Recognition (NER)?",
+        "correct": "Identify proper nouns like names, places, and organizations",
+        "wrong": [
+            "Detect grammar errors",
+            "Translate text",
+            "Remove stopwords"
+        ]
+    },
+    {
+        "question": "Which model architecture is GPT based on?",
+        "correct": "Transformer decoder",
+        "wrong": [
+            "Transformer encoder",
+            "Recurrent Neural Network",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "question": "Which NLP method reduces words to their dictionary base form?",
+        "correct": "Lemmatization",
+        "wrong": [
+            "Stemming",
+            "Parsing",
+            "Chunking"
+        ]
+    }
+]
