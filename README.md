@@ -1,6 +1,7 @@
 # 🌤️ Flask Weather & Quiz App
 
 Un'applicazione web sviluppata con Flask che combina previsioni meteo e quiz interattivi. Gli utenti possono registrarsi, fare login, consultare il meteo di una città e mettere alla prova le proprie conoscenze tramite quiz a risposta multipla.
+Visibile qui https://nicopelliz.pythonanywhere.com/
 
 ## 🔧 Funzionalità
 
